@@ -1,0 +1,11 @@
+[Unit]
+Description=Python ServerSentryBot Script Service
+
+[Service]
+ExecStart=/usr/bin/python3.8 /<path>/ServerSentryBot/serversentrybot.py
+User=root
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
